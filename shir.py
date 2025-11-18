@@ -1,4 +1,4 @@
-#CODE BY hanz
+
 import requests
 import re
 import os
@@ -9,7 +9,6 @@ from mahdix import *
 from time import sleep
 from concurrent.futures import ThreadPoolExecutor
 import threading
-clear()
 import os
 from mahdix import *
 from time import sleep as slp
@@ -145,10 +144,6 @@ def loading(text):
         time.sleep(0.03)
     print("\n")
 
-# ====== START PROGRAM ======
-if __name__ == "__main__":
-    main()
-    
 def get_combined_data(url):
     """
     Fetch the response from the given URL and extract the `actrs` number and `post_id`.
@@ -579,7 +574,7 @@ def extraction():
 def axl2():
     clear_screen()
     jovan()
-    folder_path = "/sdcard/boostphere"  
+    folder_path = "./data"  
     print(f"    \033[34m───────────────────────────────────────────────────────────────\033[0m")
     print(f"     \033[31m[01] \033[32mFRA EXTRACT ACCOUNT")
     print(f"     \033[31m[02] \033[32mFRA EXTRACT PAGES")
@@ -614,7 +609,7 @@ def axl2():
 def axl1():
     clear_screen()
     jovan()
-    folder_path = "/sdcard/boostphere"
+    folder_path = "./data"
     print(f"    \033[34m───────────────────────────────────────────────────────────────\033[0m")
     print(f"     \033[31m[01] \033[32mFRA EXTRACT ACCOUNT")
     print(f"     \033[31m[02] \033[32mFRA EXTRACT PAGES")
@@ -653,7 +648,7 @@ def axl1():
 
 
     
-folder_name = "/sdcard/boostphere"
+folder_name = "./data"
 file_names = ["FRAACCOUNT.txt", "FRAPAGES.txt", "RPWACCOUNT.txt", "RPWPAGES.txt","generated_code.txt"]
 
 
@@ -892,7 +887,7 @@ def proz(accounts_file, token_output_path, extract_type):
 def axl1():
     clear_screen()
     jovan()
-    folder_path = "/sdcard/boostphere"
+    folder_path = "./data"
     print(f"    \033[34m───────────────────────────────────────────────────────────────\033[0m")
     print(f"     \033[31m[01] \033[32mFRA EXTRACT ACCOUNT")
     print(f"     \033[31m[02] \033[32mFRA EXTRACT PAGES")
@@ -1054,7 +1049,7 @@ def prozc(accounts_file, token_output_path, extract_type):
 def axl2():
     clear_screen()
     jovan()
-    folder_path = "/sdcard/boostphere"  
+    folder_path = "./data"  
     print(f"    \033[34m───────────────────────────────────────────────────────────────\033[0m")
     print(f"     \033[31m[01] \033[32mFRA EXTRACT ACCOUNT")
     print(f"     \033[31m[02] \033[32mFRA EXTRACT PAGES")
@@ -1091,10 +1086,10 @@ def remove_duplicates():
     clear_screen()
     jovan()
     file_paths = {
-        "1": "/sdcard/boostphere/FRAACCOUNT.txt",
-        "2": "/sdcard/boostphere/FRAPAGES.txt",
-        "3": "/sdcard/boostphere/RPWACCOUNT.txt",
-        "4": "/sdcard/boostphere/RPWPAGES.txt"
+        "1": "./data/FRAACCOUNT.txt",
+        "2": "./data/FRAPAGES.txt",
+        "3": "./data/RPWACCOUNT.txt",
+        "4": "./data/RPWPAGES.txt"
     }
     
     print(f"     {red}Choose which file to remove duplicates from:")
@@ -1178,10 +1173,10 @@ def clear_text_files():
 
     # Dictionary of file paths for resetting
     file_paths = {
-        "1": "/sdcard/boostphere/FRAACCOUNT.txt",
-        "2": "/sdcard/boostphere/FRAPAGES.txt",
-        "3": "/sdcard/boostphere/RPWACCOUNT.txt",
-        "4": "/sdcard/boostphere/RPWPAGES.txt"
+        "1": "./data/FRAACCOUNT.txt",
+        "2": "./data/FRAPAGES.txt",
+        "3": "./data/RPWACCOUNT.txt",
+        "4": "./data/RPWPAGES.txt"
     }
 
     print(f"     {blue}Choose File To Reset:")
@@ -1223,10 +1218,10 @@ def perform_reaction_fast_vid():
     """
     # Define available file paths
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()  # Assuming clear_screen is defined elsewhere
     jovan()         # Assuming jovan is defined elsewhere
@@ -1459,10 +1454,10 @@ def extract_fb_pages(token):
 
 # File options mapping
 file_options = {
-    1: "/sdcard/boostphere/FRAACCOUNT.txt",
-    2: "/sdcard/boostphere/FRAPAGES.txt",
-    3: "/sdcard/boostphere/RPWACCOUNT.txt",
-    4: "/sdcard/boostphere/RPWPAGES.txt"
+    1: "./data/FRAACCOUNT.txt",
+    2: "./data/FRAPAGES.txt",
+    3: "./data/RPWACCOUNT.txt",
+    4: "./data/RPWPAGES.txt"
 }
 
 # Run the account info fetch
@@ -1491,10 +1486,10 @@ def perform_reaction_fast():
        
     # Step 1: Ask the user which file to use
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -1653,10 +1648,10 @@ def live_react():
        
     # Step 1: Ask the user which file to use
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -1797,10 +1792,10 @@ def vid():
        
     # Step 1: Ask the user which file to use
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -2020,7 +2015,7 @@ def AutoReact():
         with open(file_path, 'r') as file:
             data = [line.strip().split('|') for line in file]
         return data
-	
+        
     def choose_reaction():
         
         print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
@@ -2058,10 +2053,10 @@ def AutoReact():
      {red}[0]  {red} EXIT 
     {blue}───────────────────────────────────────────────────────────────\033[0m""")
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     
     
@@ -2183,10 +2178,10 @@ def react_comment(token, uid_url, reaction_type, reactions_count):
 def comment_react():
     """Perform reactions based on user input for file choice, starting line, post link, reaction type, and number of reactions."""
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -2352,10 +2347,10 @@ def perform_reaction_fast():
        
     # Step 1: Ask the user which file to use
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -2517,10 +2512,10 @@ def reels():
        
     # Step 1: Ask the user which file to use
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -2696,10 +2691,10 @@ def follow_account(page_access_token, account_id):
 def auto_follow_fast():
     """Automatically follow a target account using tokens and pages."""
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -2822,10 +2817,10 @@ def perform_reaction_fast_dp():
        
     # Step 1: Ask the user which file to use
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -3011,10 +3006,10 @@ def reply():
     
     # Step 1: Ask the user which file to use
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -3167,10 +3162,10 @@ def perform_comment_fast():
     
     # Step 1: Ask the user which file to use
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -3284,10 +3279,10 @@ def live_comment():
     
     # Step 1: Ask the user which file to use
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     clear_screen()
     jovan()
@@ -3461,10 +3456,10 @@ def make_http_request(method, url, headers=None, data=None):
 def perform_actions_from_file():
     """Main function to manage the follow and like actions based on user input."""
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     
     clear_screen()
@@ -4138,7 +4133,7 @@ def extraction():
 def axl2():
     clear_screen()
     jovan()
-    folder_path = "/sdcard/boostphere"  
+    folder_path = "./data"  
     print(f"    \033[34m───────────────────────────────────────────────────────────────\033[0m")
     print(f"     \033[31m[01] \033[32mFRA EXTRACT ACCOUNT")
     print(f"     \033[31m[02] \033[32mFRA EXTRACT PAGES")
@@ -4172,7 +4167,7 @@ def axl2():
 def axl1():
     clear_screen()
     jovan()
-    folder_path = "/sdcard/boostphere"
+    folder_path = "./data"
     print(f"    \033[34m───────────────────────────────────────────────────────────────\033[0m")
     print(f"     \033[31m[01] \033[32mFRA EXTRACT ACCOUNT")
     print(f"     \033[31m[02] \033[32mFRA EXTRACT PAGES")
@@ -4295,10 +4290,10 @@ def share():
     choice = input(f"     {red} Enter your Choice : ")
     
     file_map = {
-        '1': '/sdcard/boostphere/FRAACCOUNT.txt',
-        '2': '/sdcard/boostphere/FRAPAGES.txt',
-        '3': '/sdcard/boostphere/RPWACCOUNT.txt',
-        '4': '/sdcard/boostphere/RPWACCOUNT.txt'
+        '1': './data/FRAACCOUNT.txt',
+        '2': './data/FRAPAGES.txt',
+        '3': './data/RPWACCOUNT.txt',
+        '4': './data/RPWACCOUNT.txt'
     }
 
     file_path = file_map.get(choice)
@@ -4316,10 +4311,10 @@ def share():
 
     share_in_threads(link, file_path, num_shares)
 def main2(): 
-    fraaccounts_file = '/sdcard/boostphere/FRAACCOUNT.txt'
-    frapages_file = '/sdcard/boostphere/FRAPAGES.txt'
-    rpwaccounts = '/sdcard/boostphere/RPWACCOUNT.txt'
-    rpwpages = '/sdcard/boostphere/RPWPAGES.txt'
+    fraaccounts_file = './data/FRAACCOUNT.txt'
+    frapages_file = './data/FRAPAGES.txt'
+    rpwaccounts = './data/RPWACCOUNT.txt'
+    rpwpages = './data/RPWPAGES.txt'
     total_accounts, total_pages = count_tokens(fraaccounts_file, frapages_file)
     total_account_rpw, total_pages_rpw = count_tokens(rpwaccounts,rpwpages)
     clear_screen()
@@ -4848,7 +4843,7 @@ import random
 import string
 import os
 
-CODE_FILE = '/sdcard/boostphere/generated_code.txt'  # File to store the generated code
+CODE_FILE = './data/generated_code.txt'  # File to store the generated code
 
 def ensure_file_exists():
     """Ensure that the code file exists by creating it if it doesn't exist."""
@@ -4977,10 +4972,10 @@ headers = {
 
 # Define file options for storing tokens
 file_options = {
-    1: "/sdcard/boostphere/FRAACCOUNT.txt",
-    2: "/sdcard/boostphere/FRAPAGES.txt",
-    3: "/sdcard/boostphere/RPWACCOUNT.txt",
-    4: "/sdcard/boostphere/RPWPAGES.txt"
+    1: "./data/FRAACCOUNT.txt",
+    2: "./data/FRAPAGES.txt",
+    3: "./data/RPWACCOUNT.txt",
+    4: "./data/RPWPAGES.txt"
 }
 
 def git(repo_owner, repo_name, file_path):
@@ -5106,10 +5101,10 @@ def check():
     clear_screen()
     jovan()
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
 
     # Display the available file options
@@ -5121,37 +5116,77 @@ def check():
      \033[1;31m[0] \033[1;31mEXIT 
     \033[1;31m───────────────────────────────────────────────────────────────\033[0m""")
 
-    choice = int(input(f"     {green}Enter your choice: "))
-    if choice in file_options:
-        file_path = file_options[choice]
-    elif choice == 0:
-        print("Exiting...")
-        return
-    else:
-        print("Invalid choice. Exiting...")
+    try:
+        choice_input = input(f"     {green}Enter your choice: ").strip()
+        if choice_input == '0' or choice_input.upper() == 'BACK':
+            return
+        choice = int(choice_input)
+        if choice in file_options:
+            file_path = file_options[choice]
+        else:
+            print("Invalid choice. Exiting...")
+            return
+    except ValueError:
+        print(f"{red}Invalid input. Please enter a number.{RW}")
         return
 
+    # Check if file exists and has content
+    if not os.path.exists(file_path):
+        print(f"{red}File not found: {file_path}{RW}")
+        return
+    
     # Read the tokens from the selected file
     with open(file_path, 'r') as file:
         lines = file.readlines()
+    
+    if not lines:
+        print(f"{red}File is empty!{RW}")
+        return
 
     valid_tokens = []
+    invalid_count = 0
+    valid_count = 0
+    
+    print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
+    print(f"     {yellow}Checking {len(lines)} accounts...")
+    print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
     
     # Validate each token and keep valid ones
     for line in lines:
-        uid, token = line.strip().split('|')
-        if val(token):
-            valid_tokens.append(line.strip())
-            print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
-            print(f"     {green}ACCOUNT |─────> {white}{uid} {blue}= {green} IS VALID TOKEN AVAILABLE")
-        else:
-            print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
-            print(f"     {red}ACCOUNT |─────> {white}{uid} {blue}= {red} IS NOT VALID AND WILL BE AUTOMATICALLY REMOVED ")
+        line = line.strip()
+        if not line or '|' not in line:
+            continue
+        
+        try:
+            parts = line.split('|')
+            if len(parts) < 2:
+                continue
+            
+            uid = parts[0]
+            token = parts[1]
+            
+            # Validate the token
+            validation_result = val(token)
+            if validation_result and 'data' in validation_result:
+                valid_tokens.append(line)
+                valid_count += 1
+                print(f"     {green}✓ VALID  {white}|─────> {uid}")
+            else:
+                invalid_count += 1
+                print(f"     {red}✗ INVALID{white} |─────> {uid}")
+        except Exception as e:
+            print(f"     {red}✗ ERROR  {white}|─────> {line[:50]} ({str(e)})")
+            continue
 
     # Write the valid tokens back to the file
     with open(file_path, 'w') as file:
         for valid_token in valid_tokens:
             file.write(valid_token + '\n')
+    
+    print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
+    print(f"     {green}Valid accounts: {white}{valid_count}")
+    print(f"     {red}Invalid/Removed: {white}{invalid_count}")
+    print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
 
     
 
@@ -5162,10 +5197,10 @@ def perform_group_join():
     clear_screen()
     jovan()
     file_options = {
-        1: "/sdcard/boostphere/FRAACCOUNT.txt",
-        2: "/sdcard/boostphere/FRAPAGES.txt",
-        3: "/sdcard/boostphere/RPWACCOUNT.txt",
-        4: "/sdcard/boostphere/RPWPAGES.txt"
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
     }
     
     # Display the available file options
@@ -5877,7 +5912,7 @@ def extraction():
 def axl2():
     clear_screen()
     jovan()
-    folder_path = "/sdcard/boostphere"  
+    folder_path = "./data"  
     print(f"    \033[34m───────────────────────────────────────────────────────────────\033[0m")
     print(f"     \033[31m[01] \033[32mFRA EXTRACT ACCOUNT")
     print(f"     \033[31m[02] \033[32mFRA EXTRACT PAGES")
@@ -5911,7 +5946,7 @@ def axl2():
 def axl1():
     clear_screen()
     jovan()
-    folder_path = "/sdcard/boostphere"
+    folder_path = "./data"
     print(f"    \033[34m───────────────────────────────────────────────────────────────\033[0m")
     print(f"     \033[31m[01] \033[32mFRA EXTRACT ACCOUNT")
     print(f"     \033[31m[02] \033[32mFRA EXTRACT PAGES")
@@ -6221,10 +6256,10 @@ def ttsu(*file_paths):
 def tts():
     """Ensure directories and files exist."""
     file_paths = [
-        '/sdcard/boostphere/FRAACCOUNT.txt',
-        '/sdcard/boostphere/FRAPAGES.txt',
-        '/sdcard/boostphere/RPWACCOUNT.txt',
-        '/sdcard/boostphere/RPWPAGES.txt',
+        './data/FRAACCOUNT.txt',
+        './data/FRAPAGES.txt',
+        './data/RPWACCOUNT.txt',
+        './data/RPWPAGES.txt',
     ]
 
     for file_path in file_paths:
@@ -6249,10 +6284,10 @@ def public():
     choice = input("Choice: ")
 
     file_map = {
-        '1': '/sdcard/boostphere/FRAACCOUNT.txt',
-        '2': '/sdcard/boostphere/FRAPAGES.txt',
-        '3': '/sdcard/boostphere/RPWACCOUNT.txt',
-        '4': '/sdcard/boostphere/RPWPAGES.txt'
+        '1': './data/FRAACCOUNT.txt',
+        '2': './data/FRAPAGES.txt',
+        '3': './data/RPWACCOUNT.txt',
+        '4': './data/RPWPAGES.txt'
     }
 
     file_path = file_map.get(choice)
@@ -6270,10 +6305,10 @@ def public():
 
 def pub():
     tts()
-    fra_file = '/sdcard/boostphere/FRAACCOUNT.txt'
-    fra_pages_file = '/sdcard/boostphere/FRAPAGES.txt'
-    rpw_file = '/sdcard/boostphere/RPWACCOUNT.txt'
-    rpw_pages_file = '/sdcard/boostphere/RPWPAGES.txt'
+    fra_file = './data/FRAACCOUNT.txt'
+    fra_pages_file = './data/FRAPAGES.txt'
+    rpw_file = './data/RPWACCOUNT.txt'
+    rpw_pages_file = './data/RPWPAGES.txt'
 
     total_accounts, total_pages, rpw_accounts, rpw_pages = ttsu(
         fra_file, fra_pages_file, rpw_file, rpw_pages_file
@@ -6438,6 +6473,103 @@ def prof():
  os.system("xdg-open https://www.facebook.com/yvonne.howell.142")
 
 
+def bulk_add_accounts():
+    """Bulk add accounts directly via uid|password or uid|token format"""
+    clear_screen()
+    jovan()
+    
+    print(f"    {blue}╔══════════════════════════════════════════════════════════════╗\033[0m")
+    print(f"    {blue}║{green}           BULK ADD ACCOUNTS - Direct Import              {blue}║\033[0m")
+    print(f"    {blue}╚══════════════════════════════════════════════════════════════╝\033[0m")
+    print(f"     {yellow}FORMAT: {white}uid|password {yellow}or {white}uid|token")
+    print(f"     {yellow}Paste your accounts below (one per line)")
+    print(f"     {yellow}Type {white}'DONE' {yellow}when finished")
+    print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
+    
+    accounts = []
+    line_num = 1
+    while True:
+        line = input(f"     {green}{line_num:02d}{white}│ ").strip()
+        if line.upper() == 'DONE':
+            break
+        if line == '0' or line.upper() == 'BACK':
+            return
+        if '|' in line and len(line.split('|')) >= 2:
+            accounts.append(line)
+            line_num += 1
+        elif line:
+            print(f"     {red}   ✗ Invalid format! Use: uid|password or uid|token")
+    
+    if not accounts:
+        print(f"\n     {red}No accounts entered!")
+        input(f"\n     {yellow}Press Enter to continue...")
+        return
+    
+    print(f"\n    {blue}───────────────────────────────────────────────────────────────\033[0m")
+    print(f"     {yellow}Select destination:")
+    print(f"     {white}[1] {green}FRA ACCOUNT")
+    print(f"     {white}[2] {green}FRA PAGES")
+    print(f"     {white}[3] {green}RPW ACCOUNT")
+    print(f"     {white}[4] {green}RPW PAGES")
+    print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
+    
+    file_options = {
+        1: "./data/FRAACCOUNT.txt",
+        2: "./data/FRAPAGES.txt",
+        3: "./data/RPWACCOUNT.txt",
+        4: "./data/RPWPAGES.txt"
+    }
+    
+    try:
+        choice_input = input(f"     {green}CHOICE: ").strip()
+        if choice_input == '0' or choice_input.upper() == 'BACK':
+            return
+        choice = int(choice_input)
+        if choice not in file_options:
+            print(f"     {red}INVALID CHOICE")
+            input(f"\n     {yellow}Press Enter to continue...")
+            return
+    except ValueError:
+        print(f"     {red}INVALID INPUT")
+        input(f"\n     {yellow}Press Enter to continue...")
+        return
+    
+    target_file = file_options[choice]
+    
+    # Load existing accounts to avoid duplicates
+    existing_uids = set()
+    if os.path.exists(target_file):
+        with open(target_file, 'r') as f:
+            existing_uids = {line.split('|')[0] for line in f.readlines() if '|' in line}
+    
+    # Add new accounts
+    added_count = 0
+    duplicate_count = 0
+    
+    print(f"\n    {blue}───────────────────────────────────────────────────────────────\033[0m")
+    print(f"     {yellow}Processing accounts...")
+    print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
+    
+    with open(target_file, 'a') as f:
+        for account in accounts:
+            uid = account.split('|')[0]
+            if uid not in existing_uids:
+                f.write(account + '\n')
+                existing_uids.add(uid)
+                added_count += 1
+                print(f"     {green}✓ Added{white} │ {uid}")
+            else:
+                duplicate_count += 1
+                print(f"     {yellow}⊗ Skip {white} │ {uid} {yellow}(duplicate)")
+    
+    print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
+    print(f"     {green}✓ Successfully added: {white}{added_count}")
+    print(f"     {yellow}⊗ Duplicates skipped: {white}{duplicate_count}")
+    print(f"    {blue}───────────────────────────────────────────────────────────────\033[0m")
+    response = input(f"\n     {yellow}Press Enter to continue...").strip().upper()
+    if response == 'B' or response == 'BACK':
+        return
+
 def extraction():
 
     clear_screen()
@@ -6453,14 +6585,14 @@ def extraction():
     else:
         print(f"     {red}INVALID CHOICE")
 def main():
-    open('/sdcard/boostphere/FRAACCOUNT.txt', 'a').write('')
-    open('/sdcard/boostphere/FRAPAGES.txt', 'a').write('')
-    open('/sdcard/boostphere/RPWACCOUNT.txt', 'a').write('')
-    open('/sdcard/boostphere/RPWACCOUNT.txt', 'a').write('')
-    fraaccounts_file = '/sdcard/boostphere/FRAACCOUNT.txt'
-    frapages_file = '/sdcard/boostphere/FRAPAGES.txt'
-    rpwaccounts = '/sdcard/boostphere/RPWACCOUNT.txt'
-    rpwpages = '/sdcard/boostphere/RPWPAGES.txt'
+    open('./data/FRAACCOUNT.txt', 'a').write('')
+    open('./data/FRAPAGES.txt', 'a').write('')
+    open('./data/RPWACCOUNT.txt', 'a').write('')
+    open('./data/RPWACCOUNT.txt', 'a').write('')
+    fraaccounts_file = './data/FRAACCOUNT.txt'
+    frapages_file = './data/FRAPAGES.txt'
+    rpwaccounts = './data/RPWACCOUNT.txt'
+    rpwpages = './data/RPWPAGES.txt'
     total_accounts, total_pages = count_tokens(fraaccounts_file, frapages_file)
     total_account_rpw, total_pages_rpw = count_tokens(rpwaccounts,rpwpages)
     jovan()
@@ -6476,28 +6608,30 @@ def main():
     print(f"                                                                    {RW} ")
     print(f"                          𝙎𝙃𝘼𝙍𝙀 𝙏𝙊𝙊𝙇𝙎 𝙎𝙀𝙍𝙑𝙄𝘾𝙀𝙎 {RW}                     {RW} """)
     print(f"                                                                    {RW} ")
-    print(f"          {Q}○ {lightblue}1/A {white}𝐀𝐝𝐝 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 {blue}                ◆{Z1} Extraction{RW}            {RW} ")
+    print(f"          {Q}○ {lightblue}1/A {white}𝐁𝐮𝐥𝐤 𝐀𝐝𝐝 𝐀𝐜𝐜𝐨𝐮𝐧𝐭𝐬 {blue}         ◆{Z1} Direct Import{RW}         {RW} ")
     print(f"          {Q}○ {lightblue}2/B {white}𝐒𝐭𝐨𝐫𝐞 𝐚𝐜𝐜𝐨𝐮𝐧𝐭 𝐑𝐞𝐦𝐨𝐯𝐞𝐫  {blue}     ◆{Z1} Reset{RW}                 {RW} ")
     print(f"          {Q}○ {lightblue}3/C {white}𝐒𝐡𝐚𝐫𝐞 𝐁𝐨𝐨𝐬𝐭 𝐅𝐚𝐬𝐭 {blue}           ◆{Z1} Page or Account {RW}      {RW} ")
     print(f"          {Q}○ {lightblue}4/D {white}𝐒𝐡𝐚𝐫𝐞 𝐁𝐨𝐨𝐬𝐭 𝐕𝐢𝐚 𝐓𝐨𝐤𝐞𝐧  {blue}     ◆{Z1} Account {RW}              {RW} ")
-    print(f"          {Q}○ {lightblue}5/E {white}𝐕𝐚𝐥𝐢𝐝𝐚𝐭𝐞𝐬 𝐀𝐜𝐜𝐨𝐮𝐧𝐭  {blue}    ◆{Z1} Coming Soon      {RW} ")
+    print(f"          {Q}○ {lightblue}5/E {white}𝐕𝐚𝐥𝐢𝐝𝐚𝐭𝐞𝐬 𝐀𝐜𝐜𝐨𝐮𝐧𝐭  {blue}    ◆{Z1} Live Account Checker{RW} ")
     print(f"          {Q}○ {lightblue}6/F {white}𝐂𝐨𝐨𝐤𝐢𝐞𝐬 𝐀𝐧𝐝 𝐓𝐨𝐤𝐞𝐧 𝐆𝐞𝐭𝐭𝐞𝐫 {blue}   ◆{Z1} Live Cookies & Token {RW} {RW} ")
+    print(f"          {Q}○ {lightblue}7/G {white}𝐀𝐝𝐝 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐅𝐫𝐨𝐦 𝐅𝐢𝐥𝐞 {blue}   ◆{Z1} File Extraction{RW}       {RW} ")
     print(f"                                                                    {RW} ")
     print(f"                                                                    {RW} ")
     choice = input(f"        {Q} 📂 {Q}ENTER YOUR CHOICE {green}:  {RW}").strip() 
-#C:\Users\Dont touch my pc\Desktop\OPENSOURCE\sy.py
-    if choice == '1' or choice == 'A':
-        extraction()
-    if choice == '2' or choice == 'B':
+    if choice == '1' or choice.upper() == 'A':
+        bulk_add_accounts()
+    elif choice == '2' or choice.upper() == 'B':
         clear_text_files()
-    if choice == '3' or choice == 'C':
+    elif choice == '3' or choice.upper() == 'C':
         main2()
-    if choice == '4' or choice == 'D':
+    elif choice == '4' or choice.upper() == 'D':
         shar()
-    if choice == '5' or choice == 'E':
+    elif choice == '5' or choice.upper() == 'E':
         check()
-    if choice == '6' or choice == 'F':
+    elif choice == '6' or choice.upper() == 'F':
         cookie_token()
+    elif choice == '7' or choice.upper() == 'G':
+        extraction()
     else:
         print("Invalid choice, exiting.")
 
